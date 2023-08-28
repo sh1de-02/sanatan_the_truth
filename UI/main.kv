@@ -1,0 +1,26 @@
+<mainScreen>:
+	MDBoxLayout:
+		orientation: "vertical"
+		size: root.width, root.height
+		MDBoxLayout:
+			size_hint: 1, None
+			height: "40dp"
+			md_bg_color: app.theme_cls.primary_color
+
+		MDGridLayout:
+			id: mainLayout
+			size_hint: 1, 1
+			cols: 3
+			padding: "10dp"
+			spacing: "5dp"
+			
+
+
+		MDBoxLayout:
+			size_hint: 1, None
+			height: "40dp"
+			md_bg_color: "#565656"
+		MDBoxLayout:
+			size_hint: 1, None
+			height: "40dp"
+			md_bg_color: app.theme_cls.primary_color

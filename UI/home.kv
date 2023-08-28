@@ -1,0 +1,180 @@
+
+<homeScreen>:
+	Screen:
+		Image:
+			source: "Data\\background0.jpg"
+			size_hint: 1, 1
+			# width: "360dp"
+			# height: "640dp"
+			pos_hint: {"center_x": .5, "center_y":.5}
+			allow_stretch: True
+			opacity: 0.08
+		MDLabel:
+			size_hint: 1, None
+			text: "Powered by SH1DE"
+			halign: "center"
+			font_size: "24dp"
+			theme_text_color: "Custom"
+			text_color: [1, 1, 1, 0.15]
+	BoxLayout:
+		orientation: "vertical"
+		size: root.width, root.height
+		spacing: "40dp"
+		padding: "10dp"
+		BoxLayout:
+			orientation: "vertical"
+			size_hint: 1, None
+			pos_hint: {"center_x":0.5}
+
+			MDLabel:
+				size_hint: 1, None
+				font_size: "78dp"
+				height: "80dp"
+				halign: "center"
+				text: "mbvZb"
+				font_name: "./Fonts/JaJaDiMJ-Bold.ttf"
+				theme_text_color: "Custom"
+				text_color: "#FF8000"
+			MDLabel:
+				size_hint: 1, None
+				font_size: "22dp"
+				height: "24dp"
+				halign: "center"
+				text: 'ÒAwnsmv ci‡gv ag©n, ag© wnsmv Z‰_e PÓ'
+				font_name: "./Fonts/JaJaDiMJ-Bold.ttf"
+				theme_text_color: "Custom"
+				text_color: "#FF8000"
+		BoxLayout:
+			orientation: "vertical"
+			size_hint: 1, None
+			pos_hint: {"center_x":0.5}
+			height: "60dp"
+			MDLabel:
+				size_hint: 1, None
+				font_size: "18dp"
+				height: "18dp"
+				halign: "center"
+				text: "Please choose your language:-"
+				theme_text_color: "Custom"
+				text_color: "#FF8000"
+		BoxLayout:
+			orientation: "vertical"
+			size_hint: 0.9, None
+			pos_hint: {"center_x":0.5}
+			height: "200dp"
+			GridLayout:
+				cols: 2
+				size_hint: 1, 1
+				pos_hint: {"center_x":0.5}
+				spacing: "5dp"
+				MDFlatButton:
+					id: bengali
+					size_hint: 1, 1
+					text: "Bengali"
+					font_size: "24dp"
+					theme_text_color: "Custom"
+					md_bg_color: [1,1,1,0.02]
+					ripple_scale: 0
+					on_press:
+						self.md_bg_color = "#FF9911"
+						self.text_color = "#000000"
+						contnu.md_bg_color = "#FF9911"
+						contnu.text_color = "#000000"
+
+						hindi.md_bg_color = [1,1,1,0.02]
+						hindi.text_color = "#FFFFFF"
+
+						english.md_bg_color = [1,1,1,0.02]
+						english.text_color = "#FFFFFF"
+
+						otherLang.md_bg_color = [1,1,1,0.02]
+						otherLang.text_color = "#FFFFFF"
+                        
+				MDFlatButton:
+					id: hindi
+					size_hint: 1, 1
+					text: "Hindi"
+					font_size: "24dp"
+					theme_text_color: "Custom"
+					md_bg_color: [1,1,1,0.02]
+					ripple_scale: 0
+					on_press:
+						self.md_bg_color = "#FF9911"
+						self.text_color = "#000000"
+						contnu.md_bg_color = "#FF9911"
+						contnu.text_color = "#000000"
+
+						bengali.md_bg_color = [1,1,1,0.02]
+						bengali.text_color = "#FFFFFF"
+
+						english.md_bg_color = [1,1,1,0.02]
+						english.text_color = "#FFFFFF"
+
+						otherLang.md_bg_color = [1,1,1,0.02]
+						otherLang.text_color = "#FFFFFF"
+
+				MDFlatButton:
+					id: english
+					size_hint: 1, 1
+					text: "English"
+					font_size: "24dp"
+					theme_text_color: "Custom"
+					md_bg_color: [1,1,1,0.02]
+					ripple_scale: 0
+					on_press:
+						self.md_bg_color = "#FF9911"
+						self.text_color = "#000000"
+						contnu.md_bg_color = "#FF9911"
+						contnu.text_color = "#000000"
+
+						bengali.md_bg_color = [1,1,1,0.02]
+						bengali.text_color = "#FFFFFF"
+
+						hindi.md_bg_color = [1,1,1,0.02]
+						hindi.text_color = "#FFFFFF"
+
+						otherLang.md_bg_color = [1,1,1,0.02]
+						otherLang.text_color = "#FFFFFF"
+
+				MDFlatButton:
+					id: otherLang
+					size_hint: 1, 1
+					text: "Others"
+					font_size: "24dp"
+					theme_text_color: "Custom"
+					md_bg_color: [1,1,1,0.02]
+					ripple_scale: 0
+					on_press:
+						self.md_bg_color = "#FF9911"
+						self.text_color = "#000000"
+						contnu.md_bg_color = "#FF9911"
+						contnu.text_color = "#000000"
+
+						bengali.md_bg_color = [1,1,1,0.02]
+						bengali.text_color = "#FFFFFF"
+
+						hindi.md_bg_color = [1,1,1,0.02]
+						hindi.text_color = "#FFFFFF"
+
+						english.md_bg_color = [1,1,1,0.02]
+						english.text_color = "#FFFFFF"
+
+		BoxLayout:
+			orientation: "vertical"
+			size_hint: 1, None
+			pos_hint: {"center_y":0.5}
+			height: "50dp"
+			MDFlatButton:
+				id: contnu
+				text: "Continue"
+				pos_hint: {"center_x":0.5}
+				size_hint: None, None
+				font_size: "24dp"
+				theme_text_color: "Custom"
+				md_bg_color: [1,1,1,0.02]
+
+		BoxLayout:
+			orientation: "vertical"
+			size_hint: 1, 1
+
+

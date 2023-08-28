@@ -1,0 +1,305 @@
+
+<geetaScreen>:
+
+	MDNavigationLayout:
+		id: mainNavigation
+		MDScreenManager:
+			MDScreen:
+				BoxLayout:
+					orientation: "vertical"
+					size: root.width, root.height
+					MDBoxLayout:
+						orientation: "horizontal"
+						size_hint: (1, None)
+						height: "40dp"
+						md_bg_color: app.theme_cls.primary_color
+						MDIconButton:
+							size_hint: None, None
+							icon_size: "20dp"
+							icon: "menu"
+							pos_hint: {'center_y':0.5}
+							on_release: nav_drawer.set_state("open")
+						MDLabel:
+							size_hint: 1, None
+							text: "Sanatan - The Truth"
+							pos_hint: {'center_y':0.5}
+						MDIconButton:
+							size_hint: None, None
+							icon_size: "20dp"
+							icon: "dots-vertical"
+							pos_hint: {'center_y':0.5}
+					MDBoxLayout:
+						id: kivMobAds
+						size_hint: 1, None
+						height: "40dp"
+						md_bg_color: .5, .5, .5, 0.02
+					MDBoxLayout:
+						id: geetaLayout
+						# md_bg_color: "#ffffff"
+						orientation: "vertical"
+						padding: "10dp"
+						spacing: "5dp"
+						MDBoxLayout:
+							canvas.before:
+								Color:
+									rgba: [0/255, 170/255, 255/255, 1]
+								Line:
+									width: 1
+									rectangle: self.x, self.y, self.width, self.height
+							#md_bg_color: "#000000"
+							orientation: "horizontal"
+							size_hint: 1, None
+							height: "40dp"
+							padding: [0, 1, 2, 0]
+							MDLabel:
+								text: "Iu Zrmr I kª×vÎq wefvM †hvM"
+								padding: 10, 0, 0, 0
+								pos_hint: {"center_y":.5}
+								font_name: "./Fonts/DestinyMJ-Bold.ttf"
+								font_size: "24dp"
+								theme_text_color: "Custom"
+								text_color: [0, 151/255, 156/255, 0.9]
+							MDFlatButton:
+								id: trnbtn
+								size_hint: None, None
+								text: "Sanskrit"
+								pos_hint: {"center_y":.5}
+								md_bg_color: "#171717"
+								theme_text_color: "Custom"
+								text_color: "#565656"
+								font_size: "12dp"
+						MDBoxLayout:
+							canvas.before:
+								Color:
+									rgba: [0/255, 170/255, 255/255, 1]
+								Line:
+									width: 1
+									rectangle: self.x, self.y, self.width, self.height
+							orientation: "vertical"
+							id: dspl
+							size_hint: 1, None
+							height: "80dp"
+							md_bg_color: [0/255, 170/255, 255/255, 0.1]
+							
+						MDBoxLayout:
+							canvas.before:
+								Color:
+									rgba: [0/255, 170/255, 255/255, 1]
+								Line:
+									width: 1
+									rectangle: self.x, self.y, self.width, self.height
+							id: mainText1
+							size_hint: 1, 1
+							padding: "7dp"
+							#md_bg_color: [0/255, 170/255, 255/255, 0.15]
+							theme_text_color: "Custom"
+							text_color: "#00b9fc"
+							ScrollView:
+								id: textScroll
+								do_scroll_x: False
+								do_scroll_y: False
+								MDLabel:
+									id: mainText
+									size_hint_y: None
+									height: self.texture_size[1]
+									text_size: self.width, None
+									padding: 10, 10, 10, 10
+									line_height: 1.5
+									text: "`„l&U¡v Zy cvÐevbxKs e~¨ps `y‡h©vab¯Í`v|\nAvPvh©gycm½g¨ ivRv ePbgeªexr|\n `„l&U¡v Zy cvÐevbxKs e~¨ps `y‡h©vab¯Í`v|\nAvPvh©gycm½g¨ ivRv ePbgeªexr| \n`„l&U¡v Zy cvÐevbxKs e~¨ps `y‡h©vab¯Í`v|\nAvPvh©gycm½g¨ ivRv ePbgeªexr|\n `„l&U¡v Zy cvÐevbxKs e~¨ps `y‡h©vab¯Í`v|\nAvPvh©gycm½g¨ ivRv ePbgeªexr|\n`„l&U¡v Zy cvÐevbxKs e~¨ps `y‡h©vab¯Í`v|\nAvPvh©gycm½g¨ ivRv ePbgeªexr|\n`„l&U¡v Zy cvÐevbxKs e~¨ps `y‡h©vab¯Í`v|\nAvPvh©gycm½g¨ ivRv ePbgeªexr|"
+									halign: "justify"
+									pos_hint: {'center_x':0.5}
+									font_size: "24dp"
+									theme_text_color: "Custom"
+									text_color: "#909090"
+									font_name: "./Fonts/DestinyMJ-Bold.ttf"
+
+
+					MDBoxLayout:
+						orientation: "horizontal"
+						size_hint: (1, None)
+						height: "40dp"
+						md_bg_color: app.theme_cls.primary_color
+						GridLayout:
+							cols: 5
+							# orientation: "vertical"
+							size_hint: (1, None)
+							height: "40dp"
+							pos_hint: {"top":1}
+							# pos_hint: {'center_y':0.5, "center_x":0.5}
+							# spacing: "30dp"
+							# padding: "10dp"
+							spacing: "5dp"
+							MDIconButton:
+								size_hint: 1, None
+								icon: "wallet-giftcard"
+								icon_size: "20dp"
+								pos_hint: {'center_y':0.5}
+							MDIconButton:
+								size_hint: 1, None
+								icon: "skip-previous"
+								icon_size: "20dp"
+								pos_hint: {'center_y':0.5}
+							MDIconButton:
+								size_hint: 1, None
+								icon: "home"
+								icon_size: "20dp"
+								pos_hint: {'center_y':0.5}
+								md_bg_color: "#FF4A13"
+							MDIconButton:
+								size_hint: 1, None
+								icon: "skip-next"
+								icon_size: "20dp"
+								pos_hint: {'center_y':0.5}
+							MDIconButton:
+								size_hint: 1, None
+								icon: "account"
+								icon_size: "20dp"
+								pos_hint: {'center_y':0.5}
+
+
+		MDNavigationDrawer:
+			id: nav_drawer
+			radius: (0, 16, 16, 0)
+			md_bg_color: [0, 0, 0, 0.98]
+			padding: ["5dp", "15dp", 0,  0]
+			MDBoxLayout:
+				size_hint: 1, 1
+				orientation: "vertical"
+				spacing: "4dp"
+				MDBoxLayout:
+					orientation: "horizontal"
+					size_hint: 1, None
+					md_bg_color: [.5, .5, .5, 0.25]
+					height: "90"
+					padding: [15, 0, 0, 0]
+					radius: (0, 16, 0, 0)
+					MDIcon:
+						icon: "account"
+						pos_hint: {"center_y":0.5, "center_x":0.5}
+						font_size: "60dp"
+						md_bg_color: [.5, .5, .5, 0.1]
+						theme_text_color: "Custom"
+						text_color: "#FF6A13"
+					MDBoxLayout:
+						orientation: "vertical"
+						size_hint: 1, None
+						height: "70"
+						spacing: "5dp"
+						padding: [25, 0, 0, 5]
+						pos_hint: {"center_y":0.5}
+						MDLabel:
+							size_hint: 1, None
+							height: "40dp"
+							text: "mbvZb"
+							halign: "left"
+							font_name: "./Fonts/DestinyMJ-Bold.ttf"
+							font_size: "44dp"
+							theme_text_color: "Custom"
+							text_color: "#FF7A13"
+						MDLabel:
+							size_hint: 1, None
+							height: "26dp"
+							text: "k«xg™¢Me˜MxZv"
+							halign: "left"
+							font_name: "./Fonts/DestinyMJ-Bold.ttf"
+							font_size: "22dp"
+							theme_text_color: "Custom"
+							text_color: "#FF9A13"
+				MDBoxLayout:
+					orientation: "horizontal"
+					md_bg_color: "#242424"
+					size_hint: 1, None
+					height: "40dp"
+					padding: [0, 0, 5, 0]
+					MDLabel:
+						id: displayText
+						text: ""
+						halign: "center"
+						font_name: "./Fonts/DestinyMJ-Bold.ttf"
+						font_size: "24dp"
+						theme_text_color: "Custom"
+						text_color: "#00ff00"
+					MDLabel:
+						id: displayNumber
+						size_hint: None, 1
+						width: "60dp"
+						text: ""
+						halign: "center"
+						font_size: "18dp"
+						theme_text_color: "Custom"
+						text_color: "#575757"
+
+				MDBoxLayout:
+					orientation: "horizontal"
+					spacing: "2dp"
+					# padding: ["10dp", 0, "15dp", "10dp"]
+					MDBoxLayout:
+						orientation: "vertical"
+						md_bg_color: [.1, .1, .1, 0.80]
+						spacing: "7dp"
+						padding: "4dp"
+						MDLabel:
+							id: chapter
+							size_hint: 1, None
+							height: "40dp"
+							text: "Aa¨v‡qi bvg"
+							halign: "center"
+							md_bg_color: [0, 62/255, 84/255, 0.5]
+							theme_text_color: "Custom"
+							text_color: "#00b9fc"
+							font_size: "28dp"
+							font_name: "./Fonts/DestinyMJ-Bold.ttf"
+						MDScrollView:
+							do_scroll_x: False
+							size_hint: 1, 1
+							StackLayout:
+								id: chapterAdd
+								size_hint: 1, None
+								height: self.minimum_height
+								spacing: "5dp"
+
+
+					MDBoxLayout:
+						orientation: "horizontal"
+						spacing: "2dp"
+						size_hint: 0.4, 1
+						MDBoxLayout:
+							orientation: "vertical"
+							md_bg_color: [.1, .1, .1, 0.80]
+							radius: (0, 0, 16, 0)
+							spacing: "7dp"
+							padding: "4dp"
+							MDLabel:
+								id: slokas
+								size_hint: 1, None
+								height: "40dp"
+								text: "†køvK"
+								halign: "center"
+								md_bg_color: [0, 62/255, 84/255, 0.5]
+								theme_text_color: "Custom"
+								text_color: "#00b9fc"
+								font_name: "./Fonts/DestinyMJ-Bold.ttf"
+								font_size: "28dp"
+							MDScrollView:
+								id: top
+								do_scroll_x: False
+								size_hint: 1, 1
+								StackLayout:
+									id: slok_add
+									size_hint: 1, None
+									height: self.minimum_height
+									spacing: "5dp"
+	MDBoxLayout:
+		id: connecting
+		md_bg_color: [0, 0, 0, 1]
+		MDLabel:
+			id: loading
+			text: ""
+			halign: "center"
+			font_size: "22dp"
+			theme_text_color: "Custom"
+			text_color: "#FF4300"
+
+
+
+
