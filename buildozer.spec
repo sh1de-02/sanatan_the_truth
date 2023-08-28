@@ -37,7 +37,7 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3, kivy, pyjnius, sdl2_ttf==2.0.15, sdl2_ttf==2.0.15, kivymd, mysql, mysql-connector-python, plyer, pillow, android, jnius, https://github.com/MichaelStott/KivMob/archive/refs/heads/master.zip
+requirements = python3, kivy, pyjnius, clang, sdl2_ttf==2.0.15, sdl2_ttf==2.0.15, kivymd, mysql, mysql-connector-python, plyer, pillow, android, jnius, https://github.com/MichaelStott/KivMob/archive/refs/heads/master.zip
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
