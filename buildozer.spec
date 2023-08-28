@@ -13,7 +13,7 @@ package.domain = org.test
 source.dir = .
 
 # (list) Source files to include (let empty to include all the files)
-source.include_exts = py,png,jpg,kv,atlas
+source.include_exts = py,png,jpg,kv,atlas,ttf
 
 # (list) List of inclusions using pattern matching
 #source.include_patterns = assets/*,images/*.png
@@ -37,7 +37,7 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3==3.11.2, kivy, kivymd, mysql-connector-python, plyer, pillow, android, jnius, https://github.com/MichaelStott/KivMob/archive/refs/heads/master.zip
+requirements = python3, kivy, pyjnius, sdl2_ttf==2.0.15, sdl2_ttf==2.0.15, kivymd, mysql, mysql-connector-python, plyer, pillow, android, jnius, https://github.com/MichaelStott/KivMob/archive/refs/heads/master.zip
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
@@ -64,7 +64,7 @@ orientation = portrait
 # author = © Copyright Info
 
 # change the major version of python used by the app
-osx.python_version = 3.11.2
+osx.python_version = 3.10.12
 
 # Kivy version to use
 osx.kivy_version = 2.2.1
