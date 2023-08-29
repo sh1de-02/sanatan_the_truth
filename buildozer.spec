@@ -37,7 +37,7 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3, kivy, pyjnius, clang, sdl2_ttf==2.0.15, sdl2_ttf==2.0.15, kivymd, mysql, mysql-connector-python, plyer, pillow, android, jnius, https://github.com/MichaelStott/KivMob/archive/refs/heads/master.zip
+requirements = python3==3.7.6, kivy, pyjnius, clang, sdl2_ttf==2.0.15, sdl2_ttf==2.0.15, kivymd, mysql, mysql-connector-python, plyer, pillow, android, jnius, https://github.com/MichaelStott/KivMob/archive/refs/heads/master.zip
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
@@ -64,7 +64,7 @@ orientation = portrait
 # author = © Copyright Info
 
 # change the major version of python used by the app
-osx.python_version = 3.10.12
+osx.python_version = 3.7.6
 
 # Kivy version to use
 osx.kivy_version = 2.2.1
@@ -104,10 +104,10 @@ android.permissions = android.permission.INTERNET, (name=android.permission.WRIT
 android.api = 33
 
 # (int) Minimum API your APK / AAB will support.
-android.minapi = 27
+android.minapi = 22
 
 # (int) Android SDK version to use
-android.sdk = 33
+android.sdk = 28
 
 # (str) Android NDK version to use
 android.ndk = 25b
